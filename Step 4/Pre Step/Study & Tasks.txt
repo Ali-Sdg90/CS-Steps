@@ -1,0 +1,25 @@
+Study :
+
+1	-	Done
+2	-	Done
+3	-	Done (100%)
+4	-	Done
+5	-	Done
+
+Tasks :
+
+1	-	Done (https://github.com/Ali-Sdg90/Calculator)
+2	-	Done (https://github.com/Ali-Sdg90/Todo-App)
+3	-	Done (https://github.com/Ali-Sdg90/Exercism)
+4	-	Done
+5	-	Done (https://stackoverflow.com/users/19556273/ali-sdg90?tab=badges)
+6	-	Done (https://github.com/Ali-Sdg90?tab=stars)
+7	-	Done (https://github.com/Ali-Sdg90/Exercism)
+8	-	7 Days
+9	-	Twitch
+
+Mentors Training :
+
+5	-	Can't
+6	-	Can't
+
