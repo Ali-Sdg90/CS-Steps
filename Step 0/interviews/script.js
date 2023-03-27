@@ -23,6 +23,9 @@ document.querySelectorAll("div").forEach((div) => {
         case "Pending":
             div.style.color = "rgb(254, 78, 78)";
             break;
+        case "Long Time":
+            div.style.color = "rgb(204, 78, 254)";
+            break;
         case "No Time":
             div.style.color = "rgb(78, 122, 254)";
             break;
