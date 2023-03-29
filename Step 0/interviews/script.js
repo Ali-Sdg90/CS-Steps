@@ -1,10 +1,15 @@
 document.querySelectorAll("div").forEach((div) => {
     const divContent = div.textContent;
 
-    if (divContent.charAt(0) === "@") {
+    if (divContent.charAt(0) === "@" || divContent === "CopyPath") {
         div.style.cursor = "copy";
         div.addEventListener("click", function () {
-            const textToCopy = divContent;
+            let textToCopy = divContent;
+            if (div.getAttribute("link")) {
+                textToCopy = `file:///C:/Users/ali90/OneDrive/Desktop/CS-Internship/Interviews/${div.getAttribute(
+                    "link"
+                )}.txt`;
+            }
             navigator.clipboard.writeText(textToCopy).then(() => {
                 console.log(`Copied "${textToCopy}" to clipboard`);
                 const defBackgroundColor = div.style.background;
@@ -14,7 +19,6 @@ document.querySelectorAll("div").forEach((div) => {
                 }, 200);
             });
         });
-        
     } else if (!divContent) {
         div.textContent = "- -";
     }
@@ -32,5 +36,15 @@ document.querySelectorAll("div").forEach((div) => {
         case "Done.":
             div.style.color = "rgb(254, 242, 78)";
             break;
+    }
+});
+
+document.querySelectorAll("a").forEach((a) => {
+    if (!a.getAttribute("href")) {
+        a.style.color = "rgb(72, 87, 179)";
+        a.style.cursor = "default";
+        a.addEventListener("click", function (event) {
+            event.preventDefault();
+        });
     }
 });
