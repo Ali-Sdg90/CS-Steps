@@ -1,0 +1,12 @@
+body {
+    color: rgb(242, 255, 0);
+    font-size: 30px;
+}
+
+.green-text{
+    color: rgb(0, 255, 0);
+}
+
+#blue-text{
+    color: blue;
+}

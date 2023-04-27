@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(34, 35, 39);
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 3px 0 rgba(98, 0, 255, 0.25), -3px 0 rgba(255, 0, 0, 0.15);
+    border: 1px double white;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.seprate-div {
+    background: rgb(46, 47, 52);
+    border: 1px solid rgb(72, 72, 72);
+    margin: 15px 25px;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box-model-container {
+    border: 1px solid coral;
+    /* width: 500px; */
+    /* height: 200px; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: rgba(255, 102, 0, 0.281);
+    display: inline-block;
+}
+
+.box-model-content {
+    background: rgba(255, 255, 0, 0.46);
+}
+
+.border-property {
+    padding: 15px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.opacity-property {
+    background: pink;
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    color: black;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.display-header {
+    margin-bottom: 30px;
+}
+
+.display-property {
+    border: 2px solid yellow;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 166, 0, 0.422);
+    display: flex;
+    margin: 10px auto;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.z-index-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.z-index-objects {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.flex-container {
+    align-items: center;
+    border: 1px solid green;
+    background: rgba(0, 128, 0, 0.336);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flex-box {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.grid-container {
+    border: 1px solid green;
+    background: rgba(0, 128, 0, 0.336);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grid-box {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
