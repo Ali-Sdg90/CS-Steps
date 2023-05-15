@@ -68,6 +68,10 @@ a {
 
 .separator {
     background: rgb(68, 68, 68) !important;
-    font-size: 18px;
+    font-size: 13px;
+}
+
+.separator-header {
     font-weight: bold;
+    font-size: 18px;
 }
