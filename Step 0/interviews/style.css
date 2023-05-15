@@ -65,3 +65,9 @@ a {
     color: rgb(102, 122, 255);
     text-decoration: underline;
 }
+
+.separator {
+    background: rgb(68, 68, 68) !important;
+    font-size: 18px;
+    font-weight: bold;
+}
