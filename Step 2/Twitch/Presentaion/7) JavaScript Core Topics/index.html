@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>JavaScript Core Topics</title>
+    </head>
+    <body>
+        <h1>JavaScript Core Topics</h1>
+
+        <div class="topic">
+            <div class="variable-section">
+                <h2 class="section-title">Variables</h2>
+                <div class="code-container">
+                    <code>
+                        <pre id="code-variables" style="font-size: 20px">
+(variables = () => {
+    console.log(typeof 1);
+    console.log(typeof "Ali");
+    console.log(typeof true);
+    console.log(typeof i);
+    console.log(typeof variables);
+    console.log(typeof [1, 2, 3]);
+})(); </pre
+                        >
+                    </code>
+                </div>
+                <button class="run-btn" onclick="runCode('code-variables')">
+                    Run
+                </button>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 class="topic-title">if / else</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-if-else" style="font-size: 20px">
+const number = 3;
+if (number === 1) {
+    console.log("Number is 1");
+} else if (number === 2) {
+    console.log("Number is 2");
+} else if (number === 3) {
+    console.log("Number is 3");
+} else {
+    console.log("Number is not 1, 2 or 3");
+}</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-if-else')">
+                Run
+            </button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Switch</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-switch" style="font-size: 20px">
+const fruit = "apple";
+switch (fruit) {
+    case "apple":
+        console.log("It's an apple");
+    break;
+    case "banana":
+        console.log("It's a banana");
+    break;
+    case "orange":
+        console.log("It's an orange");
+    break;
+    default:
+        console.log("It's some other fruit");
+    break;
+}</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-switch')">
+                Run
+            </button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">While Loop</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-while" style="font-size: 20px">
+let count = 0;
+while (count < 10) {
+    console.log("Count: " + count++);
+}</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-while')">Run</button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Do-While Loop</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-do-while" style="font-size: 20px">
+let count = 0;
+do {
+    console.log("Count: " + count++);
+} while (count < 10);</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-do-while')">Run</button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">For Loop</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-for" style="font-size: 20px">
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-for')">Run</button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Array</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-arrays" style="font-size: 20px">
+const fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits);
+console.log("First fruit: " + fruits[0]);
+console.log("Number of fruits: " + fruits.length);
+fruits.pop();
+console.log(fruits);
+fruits.push("Mango");
+console.log(fruits);</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-arrays')">
+                Run
+            </button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Object</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-objects" style="font-size: 20px">
+let person = {
+    name: "Ali Sadeghi",
+    age: 21,
+    greet: function() {
+        console.log(`Hello, I'm ${this.name} and I'm ${this.age} years old.`);
+    }
+};
+person.greet();</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-objects')">
+                Run
+            </button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Function</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-functions" style="font-size: 20px">
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    return a / b;
+}
+
+let num1 = 10;
+let num2 = 5;
+let result1 = add(num1, num2);
+let result2 = subtract(num1, num2);
+let result3 = multiply(num1, num2);
+let result4 = divide(num1, num2);
+
+console.log("10 + 5 = " + result1);
+console.log("10 - 5 = " + result2);
+console.log("10 * 5 = " + result3);
+console.log("10 / 5 = " + result4);</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn" onclick="runCode('code-functions')">
+                Run
+            </button>
+        </div>
+        <div class="topic">
+            <h2 class="topic-title">Event</h2>
+            <div class="code-container">
+                <code>
+                    <pre id="code-event" style="font-size: 20px">
+button.addEventListener("click", () => {
+    console.log("Button clicked!");
+});</pre
+                    >
+                </code>
+            </div>
+            <button class="run-btn">Run</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

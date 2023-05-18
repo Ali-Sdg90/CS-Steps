@@ -1,0 +1,19 @@
+body {
+    background: #333;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 155, 191);
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+    border-radius: 5px;
+}

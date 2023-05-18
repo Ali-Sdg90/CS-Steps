@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>JavaScript in HTML</title>
+    </head>
+    <body>
+        <div class="box" id="myBox">Click Me</div>
+        <div class="box" id="myBox2">Click Me</div>
+
+        <script>
+            const box = document.getElementById("myBox");
+
+            box.addEventListener("click", function () {
+                box.textContent = "Clicked! (HTML script)";
+                box.style.backgroundColor = "rgb(58, 191, 46)";
+            });
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
