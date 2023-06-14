@@ -1,11 +1,7 @@
 <h1>CS-Steps</h1>
 <p>
     Welcome to the CS-Steps repository! This repository serves as a
-    comprehensive documentation of my progress throughout the
-    <a
-        href="https://github.com/cs-internship/cs-internship-spec/tree/master/courses/web"
-        >CS Internship</a
-    >
+    comprehensive documentation of my progress throughout the CS Internship
     program. As a web intern, I will be sharing my journey through the 10 steps
     (plus an additional Step 0) required to successfully complete the
     internship. Each step consists of study items, tasks, and a 20-minute
@@ -45,15 +41,10 @@
             <strong>Step 0</strong>: This folder is unique as it represents an
             additional step before the official Step 1. It contains an
             additional subfolder named "Interviews," which collects information
-            about the first interview for the
-            <a
-                href="https://github.com/cs-internship/cs-internship-spec/tree/master/courses/web"
-                >CS Internship</a
-            >
-            program. I have also consolidated my posts about the interview into
-            a single HTML file, allowing easy access to each intern's IDs with
-            just one click. This file is continuously updated as new interns
-            join the program.
+            about the first interview for the CS Internship program. I have also
+            consolidated my posts about the interview into a single HTML file,
+            allowing easy access to each intern's IDs with just one click. This
+            file is continuously updated as new interns join the program.
         </p>
     </li>
 </ol>
@@ -65,7 +56,7 @@
     materials, please visit the
     <a
         href="https://github.com/cs-internship/cs-internship-spec/tree/master/courses/web"
-        >CS Internship GitHub Pages</a
+        >CS Internship GitHub Page</a
     >. This valuable resource will provide you with all the information you need
     to succeed in the program.
 </p>
