@@ -11,6 +11,7 @@ document.querySelectorAll("div").forEach((div) => {
                 )}.txt`;
             }
             navigator.clipboard.writeText(textToCopy).then(() => {
+                toastifyCopy(textToCopy);
                 console.log(`Copied "${textToCopy}" to clipboard`);
                 const defBackgroundColor = div.style.background;
                 div.style.background = "transparent";
@@ -48,3 +49,7 @@ document.querySelectorAll("a").forEach((a) => {
         });
     }
 });
+
+const toastifyCopy = (textToCopy) =>{
+    
+}
