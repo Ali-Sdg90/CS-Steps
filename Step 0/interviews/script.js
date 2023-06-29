@@ -6,9 +6,9 @@ document.querySelectorAll("div").forEach((div) => {
         div.addEventListener("click", function () {
             let textToCopy = divContent;
             if (div.getAttribute("link")) {
-                textToCopy = `file:///C:/Users/ali90/OneDrive/Desktop/CS-Internship/Interviews/${div.getAttribute(
-                    "link"
-                )}.txt`;
+                textToCopy = `file:///C:/Users/ali90/OneDrive/Desktop/CS-Internship/Interviews/${div
+                    .getAttribute("link")
+                    .replace(/ /g, "%20")}.txt`;
             }
             navigator.clipboard.writeText(textToCopy).then(() => {
                 toastifyCopy(textToCopy);
@@ -55,7 +55,7 @@ const toastifyCopy = (textToCopy) => {
         <span class="tostify">
             <span class="tostify__content">
                 <span>Text copied</span>
-                <span class="tostify__text" title="${textToCopy}">
+                <span class="tostify__content__text" title="${textToCopy}">
                     ${textToCopy}
                 </span>
             </span>

@@ -1,0 +1,29 @@
+@keyframes tostify__animation {
+    0% {
+        opacity: 0;
+        right: -300px;
+    }
+    10% {
+        opacity: 0.93;
+        right: 20px;
+    }
+    15% {
+        right: 10px;
+    }
+    90% {
+        right: 10px;
+        opacity: 0.93;
+    }
+    100% {
+        right: -300px;
+        opacity: 0;
+    }
+}
+@keyframes tostify__timer__animation {
+    0% {
+        border-left: 250px solid rgb(168, 168, 0);
+    }
+    100% {
+        border-left: 0px solid rgb(129, 129, 0);
+    }
+}
