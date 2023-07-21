@@ -1,0 +1,21 @@
+#numbers {
+    // border: 1px solid red;
+    width: 320px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0 0 5px 5px rgb(45, 45, 45);
+    border-radius: 10px;
+
+    div{
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include flex-center();
+        font-size: 25px;
+        background: rgb(83, 83, 83);
+    }
+}

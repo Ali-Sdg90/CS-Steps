@@ -1,0 +1,31 @@
+#keys {
+    // border: 1px solid red;
+    width: $keys-width;
+    height: $keys-height;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(41, 41, 41);
+    box-shadow: 0 0 20px 20px rgb(41, 41, 41);
+    
+    div {
+        background: gray;
+        @include flex-center();
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.079);
+        font-size: 30px;
+        transition: all 0.1s;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(105, 105, 105);
+        }
+
+        &:active {
+            background: rgb(89, 89, 89);
+            transform: translate(0, 2px);
+        }
+    }
+}
