@@ -145,4 +145,8 @@ a {
 }
 .tostify:hover {
   background-color: rgb(88, 88, 88);
+}
+
+.thin-font {
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
