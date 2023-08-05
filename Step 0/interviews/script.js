@@ -6,7 +6,7 @@ document.querySelectorAll("div").forEach((div) => {
         div.addEventListener("click", function () {
             let textToCopy = divContent;
             if (div.getAttribute("link")) {
-                textToCopy = `file:///C:/Users/ali90/OneDrive/Desktop/CS-Internship/Interviews/${div
+                textToCopy = `file:///D:/Desktop/CS-Internship/Interviews/${div
                     .getAttribute("link")
                     .replace(/ /g, "%20")}.txt`;
             }
