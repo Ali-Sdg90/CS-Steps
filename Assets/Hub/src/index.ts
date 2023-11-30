@@ -158,11 +158,6 @@ const stepsTable: HTMLElement | null = document.querySelector(
     ".steps-table"
 ) as HTMLElement;
 
-const openPdfInNewTab = (pdfPath: string) => {
-    console.log("in");
-    window.open(pdfPath, "_blank");
-};
-
 for (let i = 0; i < allSteps.length; i++) {
     stepsTable.innerHTML += `
         <div class="step-contents">

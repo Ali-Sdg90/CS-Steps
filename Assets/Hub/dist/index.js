@@ -35,10 +35,6 @@ let allSteps = [
     step10,
 ];
 const stepsTable = document.querySelector(".steps-table");
-const openPdfInNewTab = (pdfPath) => {
-    console.log("in");
-    window.open(pdfPath, "_blank");
-};
 for (let i = 0; i < allSteps.length; i++) {
     stepsTable.innerHTML += `
         <div class="step-contents">
