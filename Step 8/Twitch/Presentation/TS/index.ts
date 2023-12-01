@@ -1,28 +1,30 @@
-// console.log("hello");
+console.log("hello");
 
-// const ali = "hi";
+const aliS = "hi";
 
-// Math.trunc(2.2);
+Math.trunc(2.2);
 
-// let Aloha: string | number = "ali";
+let Aloha: string | number = "ali";
 
-// Aloha = 21;
+Aloha = 21;
 
-// const randomFunction = (input: number): number | void => {
-//     input++;
+const randomFunction = (input: number): number | void => {
+    input++;
 
-//     if (input > 10) {
-//         return input;
-//     }
-// };
+    if (input > 10) {
+        return input;
+    }
+};
 
-// console.log(randomFunction(Aloha));
+console.log(randomFunction(Aloha));
 
-// const text: HTMLElement | null = document.querySelector(".text");
+const text: HTMLElement | null = document.querySelector(".text");
 
-// if (text) {
-//     text.textContent = (randomFunction(Aloha)).toString();
-// }
+if (text) {
+    text.textContent = String(randomFunction(Aloha));
+}
+
+// -----------------
 
 interface Intern {
     fullName: string;

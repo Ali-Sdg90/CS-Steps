@@ -3,10 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
         <title>Step 8</title>
     </head>
     <body>
         <div class="text">100</div>
-        <script src="JS/index.js"></script>
+        <code>
+            TypeScript Code:
+            <pre>
+console.log("hello");
+const ali2 = "hi";
+
+Math.trunc(2.2);
+
+let Aloha: string | number = "ali";
+
+Aloha = 21;
+
+const randomFunction = (input: number): number | void => {
+    input++;
+
+    if (input > 10) {
+        return input;
+    }
+};
+
+console.log(randomFunction(Aloha));
+
+const text: HTMLElement | null = document.querySelector(".text");
+
+if (text) {
+    text.textContent = String(randomFunction(Aloha));
+}
+
+// -----------------
+
+interface Intern {
+    fullName: string;
+    course: string;
+    step: number;
+    showInternData(): void;
+}
+
+class CreateNewIntern implements Intern {
+    fullName: string;
+    course: string;
+    step: number;
+
+    constructor(fullName: string, course: string, step: number) {
+        this.fullName = fullName;
+        this.course = course;
+        this.step = step;
+    }
+
+    showInternData = (): void => {
+        console.log(
+            `${this.fullName} is in ${this.course} course at Step ${this.step}.`
+        );
+    };
+}
+
+const ali: Intern = new CreateNewIntern("Ali Sadeghi", "Web", 8);
+
+console.log(ali.showInternData());</pre
+            >
+        </code>
+        <script src="./JS/index.js"></script>
     </body>
 </html>
