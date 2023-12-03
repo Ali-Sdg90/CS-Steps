@@ -38,7 +38,7 @@ class Step implements StepFormat {
 
 const step0: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/Step%200.md",
-    "./Step 0/Step sum/Step 0 sum.pdf",
+    "./Step 0/Step sum/Step 0 Sum.pdf",
     "Download",
     "./Step 0/interviews/index.html",
     "First Interviews",
@@ -47,7 +47,7 @@ const step0: StepFormat = new Step(
 );
 const step1: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/01-BasicLayout-IntroJS.md",
-    "./Step 1/Step sum/Step 1 sum.pdf",
+    "./Step 1/Step sum/Step 1 Sum.pdf",
     "Download",
     "./Step 1/Twitch/Presentation/",
     "Twitch Project",
@@ -56,7 +56,7 @@ const step1: StepFormat = new Step(
 );
 const step2: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/02-AdvancedLayout-BasicJS.md",
-    "./Step 2/Step sum/Step 2 sum.pdf",
+    "./Step 2/Step sum/Step 2 Sum.pdf",
     "Download",
     "./Step 2/Twitch/Presentation/",
     "Twitch Project",
@@ -65,7 +65,7 @@ const step2: StepFormat = new Step(
 );
 const step3: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/03-intermediateJS(I).md",
-    "./Step 3/Step sum/Step 3 sum.pdf",
+    "./Step 3/Step sum/Step 3 Sum.pdf",
     "Download",
     "./Step 3/Twitch/Presentation/Project/",
     "Twitch Project",
@@ -74,7 +74,7 @@ const step3: StepFormat = new Step(
 );
 const step4: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/04-intermediateJS(II).md",
-    "./Step 4/Step sum/Step 4 sum.pdf",
+    "./Step 4/Step sum/Step 4 Sum.pdf",
     "Download",
     "./Step 4/Twitch/Presentation/",
     "Twitch Project",
@@ -83,7 +83,7 @@ const step4: StepFormat = new Step(
 );
 const step5: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/05-DesignPattern.md",
-    "./Step 5/Step sum/Step 5 sum.pdf",
+    "./Step 5/Step sum/Step 5 Sum.pdf",
     "Download",
     "./Step 5/Twitch/Presentation/",
     "Twitch Project",
@@ -92,7 +92,7 @@ const step5: StepFormat = new Step(
 );
 const step6: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/06-http-storage.md",
-    "./Step 6/Step sum/Step 6 sum.pdf",
+    "./Step 6/Step sum/Step 6 Sum.pdf",
     "Download",
     "./Step 6/Twitch/Presentation/Project/",
     "Twitch Project",
@@ -101,7 +101,7 @@ const step6: StepFormat = new Step(
 );
 const step7: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/07-Security.md",
-    "./Step 7/Step sum/Step 7 sum.pdf",
+    "./Step 7/Step sum/Step 7 Sum.pdf",
     "Download",
     "./Step 7/Twitch/Presentation/",
     "Twitch Project",
@@ -110,7 +110,7 @@ const step7: StepFormat = new Step(
 );
 const step8: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/08-BasicTS.md",
-    "./Step 8/Step sum/Step 8 sum.pdf",
+    "./Step 8/Step sum/Step 8 Sum.pdf",
     "Download",
     "./Step 8/Twitch/Presentation/",
     "Twitch Project",
@@ -119,7 +119,7 @@ const step8: StepFormat = new Step(
 );
 const step9: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/09-IntermediateTS(I).md",
-    // "./Step 9/Step sum/Step 9 sum.pdf",
+    // "./Step 9/Step sum/Step 9 Sum.pdf",
     "",
     "- - -",
     // "./Step 9/Twitch/Presentation/",
@@ -130,7 +130,7 @@ const step9: StepFormat = new Step(
 );
 const step10: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/10-IntermediateTS(II).md",
-    // "./Step 9/Step sum/Step 9 sum.pdf",
+    // "./Step 9/Step sum/Step 9 Sum.pdf",
     "",
     "- - -",
     // "./Step 10/Twitch/Presentation/",
