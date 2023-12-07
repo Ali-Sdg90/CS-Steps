@@ -38,7 +38,7 @@ class Step implements StepFormat {
 
 const step0: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/Step%200.md",
-    "./Step 0/Step sum/Step 0 Sum.pdf",
+    "./Step 0/Step sum/Step 0 sum.pdf",
     "Download",
     "./Step 0/interviews/index.html",
     "First Interviews",
@@ -105,8 +105,8 @@ const step7: StepFormat = new Step(
     "Download",
     "./Step 7/Twitch/Presentation/",
     "Twitch Project",
-    "",
-    "- - -"
+    "https://www.youtube.com/watch?v=Kbj4kt2G1o8",
+    "YouTube Link"
 );
 const step8: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/08-BasicTS.md",
@@ -114,8 +114,8 @@ const step8: StepFormat = new Step(
     "Download",
     "./Step 8/Twitch/Presentation/",
     "Twitch Project",
-    "",
-    "- - -"
+    "https://www.youtube.com/watch?v=eibOCI12Ve4",
+    "YouTube Link"
 );
 const step9: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/09-IntermediateTS(I).md",
@@ -179,3 +179,75 @@ for (let i = 0; i < allSteps.length; i++) {
         </div>
     `;
 }
+
+// rainbow-background from Learning-JS-
+
+const createRandomValue = (): (number | boolean)[] => {
+    return [
+        Math.trunc(Math.random() * 120) + 120,
+        !!Math.trunc(Math.random() * 2),
+    ];
+};
+
+let r: (number | boolean)[] = createRandomValue();
+let g: (number | boolean)[] = createRandomValue();
+let b: (number | boolean)[] = createRandomValue();
+
+const changeColorValue = (value: (number | boolean)[]) => {
+    if (value[1]) {
+        value[0] = (value[0] as number) + 1;
+    } else {
+        value[0] = (value[0] as number) - 1;
+    }
+
+    if (value[0] === 120 || value[0] === 255) {
+        value[1] = !value[1];
+    }
+
+    return value;
+};
+
+const makeValue = (
+    value: (typeof r)[0] | (typeof g)[0] | (typeof b)[0],
+    divideBy: number
+) => {
+    return Math.trunc((value as number) / divideBy);
+};
+
+const updateColors = () => {
+    r = changeColorValue(r);
+    g = changeColorValue(g);
+    b = changeColorValue(b);
+
+    document.documentElement.style.setProperty(
+        "--randomColor1",
+        `rgb(${makeValue(r[0], 1)}, ${makeValue(g[0], 1)}, ${makeValue(
+            b[0],
+            1
+        )})`
+    );
+    document.documentElement.style.setProperty(
+        "--randomColor2",
+        `rgb(${makeValue(r[0], 2)}, ${makeValue(g[0], 2)}, ${makeValue(
+            b[0],
+            2
+        )})`
+    );
+    document.documentElement.style.setProperty(
+        "--randomColor3",
+        `rgb(${makeValue(r[0], 3)}, ${makeValue(g[0], 3)}, ${makeValue(
+            b[0],
+            3
+        )})`
+    );
+    document.documentElement.style.setProperty(
+        "--randomColor4",
+        `rgb(${makeValue(r[0], 4)}, ${makeValue(g[0], 4)}, ${makeValue(
+            b[0],
+            4
+        )})`
+    );
+};
+
+updateColors();
+setInterval(updateColors, 50);

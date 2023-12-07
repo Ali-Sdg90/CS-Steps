@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     white-space: nowrap;
+    transition: background-color 50ms;
+}
+
+:root {
+    --randomColor1: black;
+    --randomColor2: black;
+    --randomColor3: black;
+    --randomColor4: black;
 }
 
 body {
@@ -13,7 +21,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     font-family: sans-serif;
-    background-color: #222;
+    background-color: var(--randomColor1);
     color: white;
 }
 
@@ -31,7 +39,8 @@ a {
     align-items: center;
     padding-top: 30px;
     font-size: 40px;
-    text-shadow: 3px 0 rgba(98, 0, 255, 0.25), -3px 0 rgba(255, 0, 0, 0.25);
+    color: var(--randomColor4);
+    text-shadow: 2.5px 0 rgba(98, 0, 255, 0.25), -2.5px 0 rgba(255, 0, 0, 0.25);
 }
 
 .steps-table {
@@ -46,9 +55,9 @@ a {
     border-radius: 5px;
     margin: 30px 30px 20px;
     font-size: 20px;
-    background-color: #111;
+    background-color: var(--randomColor4);
     overflow: hidden;
-    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.21);
 
     .table-headers {
         display: grid;
@@ -62,7 +71,8 @@ a {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            background-color: #1e1e1e;
+            // background-color: #1e1e1e;
+            background-color: var(--randomColor3);
         }
     }
 
@@ -78,7 +88,7 @@ a {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            background-color: #333;
+            background-color: var(--randomColor2);
         }
     }
 }

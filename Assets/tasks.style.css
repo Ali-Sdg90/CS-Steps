@@ -2,21 +2,21 @@ body {
     line-height: 33px;
     background: rgb(13, 17, 23);
     color: white;
-    font-family: sans-serif;
     letter-spacing: 0.5px;
     padding: 0 20px 0 20px;
     font-size: 18px;
+    font-family: sans-serif;
 }
 
-a{
+a {
     color: rgb(47, 129, 247);
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-h2{
+h2 {
     border-bottom: 1px solid #30363d;
     padding-bottom: 25px;
 }
@@ -25,7 +25,7 @@ ul ol {
     list-style: lower-roman;
 }
 
-code{
+code {
     border-radius: 6px;
     padding: 3px 6px;
     background-color: rgb(52, 57, 66);
