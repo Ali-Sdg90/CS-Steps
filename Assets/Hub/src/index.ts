@@ -119,12 +119,10 @@ const step8: StepFormat = new Step(
 );
 const step9: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/09-IntermediateTS(I).md",
-    // "./Step 9/Step sum/Step 9 Sum.pdf",
-    "",
-    "- - -",
-    // "./Step 9/Twitch/Presentation/",
-    "",
-    "- - -",
+    "./Step 9/Step sum/Step 9 Sum.pdf",
+    "Download",
+    "./Step 9/Twitch/Presentation/",
+    "Twitch Project",
     "",
     "- - -"
 );

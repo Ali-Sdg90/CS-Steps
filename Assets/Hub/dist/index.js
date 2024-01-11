@@ -19,7 +19,7 @@ const step5 = new Step("https://github.com/cs-internship/cs-internship-spec/blob
 const step6 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/06-http-storage.md", "./Step 6/Step sum/Step 6 Sum.pdf", "Download", "./Step 6/Twitch/Presentation/Project/", "Twitch Project", "https://youtu.be/F4P1bU2R-3w?si=CNr3jf6zzuZxlfOy", "YouTube Link");
 const step7 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/07-Security.md", "./Step 7/Step sum/Step 7 Sum.pdf", "Download", "./Step 7/Twitch/Presentation/", "Twitch Project", "https://www.youtube.com/watch?v=Kbj4kt2G1o8", "YouTube Link");
 const step8 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/08-BasicTS.md", "./Step 8/Step sum/Step 8 Sum.pdf", "Download", "./Step 8/Twitch/Presentation/", "Twitch Project", "https://www.youtube.com/watch?v=eibOCI12Ve4", "YouTube Link");
-const step9 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/09-IntermediateTS(I).md", "", "- - -", "", "- - -", "", "- - -");
+const step9 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/09-IntermediateTS(I).md", "./Step 9/Step sum/Step 9 Sum.pdf", "Download", "./Step 9/Twitch/Presentation/", "Twitch Project", "", "- - -");
 const step10 = new Step("https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/10-IntermediateTS(II).md", "", "- - -", "", "- - -", "", "- - -");
 let allSteps = [
     step0,
