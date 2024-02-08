@@ -123,19 +123,17 @@ const step9: StepFormat = new Step(
     "Download",
     "./Step 9/Twitch/Presentation/",
     "Twitch Project",
-    "",
-    "- - -"
+    "https://youtu.be/knzLZq5wbRs?si=_DkSdDUUdpsgrgtc",
+    "YouTube Link"
 );
 const step10: StepFormat = new Step(
     "https://github.com/cs-internship/cs-internship-spec/blob/master/courses/web/10-IntermediateTS(II).md",
-    // "./Step 9/Step sum/Step 9 Sum.pdf",
-    "",
-    "- - -",
-    // "./Step 10/Twitch/Presentation/",
-    "",
-    "- - -",
-    "",
-    "- - -"
+    "./Step 10/Step sum/Step 10 Sum.pdf",
+    "Download",
+    "./Step 10/Twitch/Presentation/",
+    "https://youtu.be/ztk_81s49zE?si=PEFkZSvRBaiYEb5G",
+    "Twitch Project",
+    "YouTube Link"
 );
 
 let allSteps = [
