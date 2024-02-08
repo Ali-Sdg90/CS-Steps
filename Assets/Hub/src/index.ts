@@ -131,8 +131,8 @@ const step10: StepFormat = new Step(
     "./Step 10/Step sum/Step 10 Sum.pdf",
     "Download",
     "./Step 10/Twitch/Presentation/",
-    "https://youtu.be/ztk_81s49zE?si=PEFkZSvRBaiYEb5G",
     "Twitch Project",
+    "https://youtu.be/ztk_81s49zE?si=PEFkZSvRBaiYEb5G",
     "YouTube Link"
 );
 
