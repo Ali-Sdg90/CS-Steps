@@ -39,12 +39,6 @@ body {
   font-family: sans-serif;
   padding: 20px;
 }
-body div body {
-  background: #333;
-  color: rgba(255, 255, 255, 0.9);
-  font-family: sans-serif;
-  padding: 20px;
-}
 body div:nth-child(14n-13), body div:nth-child(14n-12), body div:nth-child(14n-11), body div:nth-child(14n-10), body div:nth-child(14n-9), body div:nth-child(14n-8), body div:nth-child(14n-7) {
   background: rgb(81, 81, 81);
 }
@@ -53,8 +47,9 @@ body div:nth-child(14n-6), body div:nth-child(14n-5), body div:nth-child(14n-4),
 }
 
 h1 {
+  font-size: 35px;
   text-align: center;
-  padding: 10px 0 25px;
+  padding: 5px 0 25px;
   letter-spacing: 1px;
   text-shadow: 2px 0 rgba(0, 89, 255, 0.4), -2px 0 rgba(211, 0, 0, 0.4);
 }
@@ -153,4 +148,23 @@ a {
 
 .thin-font {
   font-weight: 100;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(185, 185, 185, 0.674);
+  border-radius: 10px;
+  outline: 2px solid rgb(76, 76, 76);
+  outline-offset: -2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(174, 174, 174);
 }/*# sourceMappingURL=style.css.map */

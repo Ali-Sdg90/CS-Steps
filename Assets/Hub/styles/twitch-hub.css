@@ -26,25 +26,28 @@ h1 {
 .main-container {
   width: 400px;
   display: block;
-  margin: 40px auto;
+  margin: 30px auto;
   background: #111;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
   box-shadow: 0 0 5px 5px #323232;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 15px;
 }
 .main-container div {
   width: 100%;
 }
 
 ol {
-  font-size: 30px;
+  font-size: 25px;
   background: rgb(56, 56, 56);
   margin-top: 5px;
-  padding: 10px 10px 10px 15px;
+  padding: 13px 10px 13px 15px;
   list-style-type: decimal;
   list-style-position: inside;
   display: flex;
@@ -52,6 +55,7 @@ ol {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 15px;
 }
 
 a {
