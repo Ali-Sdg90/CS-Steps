@@ -145,17 +145,19 @@ a {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 ::-webkit-scrollbar-track {
     background: #333;
+    outline: 1px solid #333;
+
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(185, 185, 185, 0.674);
+    background: rgba(151, 151, 151, 0.674);
     border-radius: 10px;
-    outline: 2px solid rgb(76, 76, 76);
+    outline: 2px solid #333;
     outline-offset: -2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(174, 174, 174);
+    background: rgba(175, 175, 175, 0.674);
 }
