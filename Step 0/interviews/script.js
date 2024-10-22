@@ -3,18 +3,23 @@ document.querySelectorAll("div").forEach((div) => {
 
     if (divContent.charAt(0) === "@" || divContent === "CopyPath") {
         div.style.cursor = "copy";
+
         div.addEventListener("click", function () {
             let textToCopy = divContent;
+
             if (div.getAttribute("link")) {
                 textToCopy = `file:///D:/Desktop/CS-Internship/Interviews/${div
                     .getAttribute("link")
                     .replace(/ /g, "%20")}.txt`;
             }
+
             navigator.clipboard.writeText(textToCopy).then(() => {
                 toastifyCopy(textToCopy);
                 console.log(`Copied "${textToCopy}" to clipboard`);
+
                 const defBackgroundColor = div.style.background;
                 div.style.background = "transparent";
+
                 setTimeout(() => {
                     div.style.background = defBackgroundColor;
                 }, 200);
@@ -44,6 +49,7 @@ document.querySelectorAll("a").forEach((a) => {
     if (!a.getAttribute("href")) {
         a.style.color = "rgb(72, 87, 179)";
         a.style.cursor = "default";
+
         a.addEventListener("click", function (event) {
             event.preventDefault();
         });
@@ -63,3 +69,32 @@ const toastifyCopy = (textToCopy) => {
         </span>
     `;
 };
+
+// ICARUS Easter Egg :)
+const ICARUSs = document.querySelectorAll(".ICARUS");
+
+ICARUSs.forEach((ICARUS) => {
+    ICARUS.addEventListener("click", (event) => {
+        if (ICARUS.classList.contains("ICARUS")) {
+            console.log("Aloha!");
+
+            ICARUS.setAttribute(
+                "href",
+                "https://also-ali-sdg90.github.io/ICARUS/"
+            );
+
+            ICARUS.classList.remove("ICARUS");
+
+            setTimeout(() => {
+                ICARUS.removeAttribute("href");
+            }, 0);
+
+            event.preventDefault();
+            window.open(ICARUS.getAttribute("href"), "_blank");
+        }
+    });
+
+    ICARUS.addEventListener("mouseover", (event) => {
+        event.preventDefault();
+    });
+});
