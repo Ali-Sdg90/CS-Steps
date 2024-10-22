@@ -76,6 +76,11 @@ div {
 a {
     color: rgb(102, 122, 255);
     letter-spacing: 1px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .path {
@@ -151,6 +156,7 @@ a {
     cursor: default;
     text-decoration: none;
     color: white !important;
+    display: inline !important;
 }
 
 .ICARUS {
