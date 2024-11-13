@@ -558,4 +558,11 @@ const interviewsData = [
         twitterLink: "",
         telegramLink: "https://t.me/c/1770937044/3258",
     },
+    {
+        name: "Alireza Hezarpisheh",
+        username: "@alrza78",
+        date: "1403/08/20 16:00",
+        twitterLink: "",
+        telegramLink: "",
+    },
 ];
