@@ -3,10 +3,12 @@ const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, {
     type: "line",
     data: {
-        labels: monthArray,
+        // labels: monthArray,
+        labels: validClockCounter,
         datasets: [
             {
-                data: monthAmount,
+                // data: monthAmount,
+                data: clockData,
                 fill: false,
                 borderColor: "#00D68A",
                 backgroundColor: "#00D68A",
@@ -23,7 +25,7 @@ const myChart = new Chart(ctx, {
         responsive: true,
         maintainAspectRatio: false,
         animation: {
-            duration: 1000,
+            duration: 1300,
             easing: "easeOutBounce",
         },
         scales: {
