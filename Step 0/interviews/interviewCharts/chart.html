@@ -8,19 +8,32 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+
         <style>
-            #chart-container {
-                width: 80%;
+            .date-chart-container,
+            .time-chart-container {
+                width: 80vw;
                 height: 400px;
                 margin: 0 auto;
+            }
+
+            .time-chart-container {
+                width: 160vw;
+                transform: scale(0.5);
+                transform-origin: top left;
             }
         </style>
     </head>
     <body>
         <h1>hello2</h1>
 
-        <div id="chart-container">
-            <canvas id="myChart"></canvas>
+        <div class="date-chart-container">
+            <canvas class="date-chart"></canvas>
+        </div>
+
+        <div class="time-chart-container">
+            <canvas class="time-chart"></canvas>
         </div>
 
         <script src="./../interviewsData.js"></script>

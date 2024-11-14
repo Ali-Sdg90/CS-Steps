@@ -5,6 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style/style.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+
         <title>First Interviews</title>
     </head>
     <body>
@@ -54,8 +60,23 @@
             <div link="Ali Hesaraki" class="path">CopyPath</div> -->
         </main>
 
+        <section class="chart-section">
+            <div class="date-chart-container">
+                <div class="chart-header-data">Interviews per Month</div>
+                <canvas class="date-chart"></canvas>
+            </div>
+
+            <div class="time-chart-container">
+                <div class="chart-header-time">Interview Hours per Day</div>
+                <canvas class="time-chart"></canvas>
+            </div>
+        </section>
+
         <script src="./interviewsData.js"></script>
         <script src="./rowMaker.js"></script>
         <script src="./script.js"></script>
+
+        <script src="./interviewCharts/chartMaker.js"></script>
+        <script src="./interviewCharts/monthChart.js"></script>
     </body>
 </html>

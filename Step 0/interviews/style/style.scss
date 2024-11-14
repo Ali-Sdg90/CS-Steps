@@ -51,20 +51,20 @@ main {
     overflow: hidden;
     outline: 1px solid rgb(70, 70, 70);
     outline-offset: -1px;
-}
 
-div {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 40px;
-    line-height: 14px;
-    padding: 5px;
-    overflow: hidden;
-    transition: background 0.5s;
-    text-align: center;
+    div {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        line-height: 14px;
+        padding: 5px;
+        overflow: hidden;
+        transition: background 0.5s;
+        text-align: center;
+    }
 }
 
 .header {
@@ -165,6 +165,55 @@ a {
 
     &:hover {
         color: rgb(131, 135, 255) !important;
+    }
+}
+
+.chart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 40px;
+    position: relative;
+
+    .chart-header-data,
+    .chart-header-time {
+        border: 1px solid rgb(81, 81, 81);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .chart-header-data {
+        margin-bottom: 3px;
+    }
+
+    .chart-header-time {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .date-chart-container,
+    .time-chart-container {
+        width: 90vw;
+        height: 400px;
+        padding: 20px 20px 45px;
+        border-radius: 20px;
+    }
+
+    .date-chart-container {
+        // padding-top: 56px;
+    }
+
+    .time-chart-container {
+        width: 180vw;
+        transform: scale(0.5);
+        padding: 40px 40px 110px;
+        position: relative;
+        top: -105px;
+        height: 600px !important;
     }
 }
 

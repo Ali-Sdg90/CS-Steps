@@ -63,8 +63,7 @@ main {
   outline: 1px solid rgb(70, 70, 70);
   outline-offset: -1px;
 }
-
-div {
+main div {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
@@ -171,6 +170,46 @@ a {
 }
 .ICARUS:hover {
   color: rgb(131, 135, 255) !important;
+}
+
+.chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding-top: 40px;
+  position: relative;
+}
+.chart-section .chart-header-data,
+.chart-section .chart-header-time {
+  border: 1px solid rgb(81, 81, 81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.chart-section .chart-header-data {
+  margin-bottom: 3px;
+}
+.chart-section .chart-header-time {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.chart-section .date-chart-container,
+.chart-section .time-chart-container {
+  width: 90vw;
+  height: 400px;
+  padding: 20px 20px 45px;
+  border-radius: 20px;
+}
+.chart-section .time-chart-container {
+  width: 180vw;
+  transform: scale(0.5);
+  padding: 40px 40px 110px;
+  position: relative;
+  top: -105px;
+  height: 600px !important;
 }
 
 ::-webkit-scrollbar {
