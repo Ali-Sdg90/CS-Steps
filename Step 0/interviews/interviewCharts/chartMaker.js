@@ -77,11 +77,11 @@ const monthAmountCounter = () => {
             }
         });
     });
-
-    // console.log(monthArray, monthAmount);
 };
 
 monthAmountCounter();
+
+document.querySelector(".total-month-number").textContent = monthArray.length;
 
 // console.log(tableData);
 
@@ -96,8 +96,6 @@ timeArray.sort((a, b) => {
     const [hoursB, minutesB] = b.split(":").map(Number);
     return hoursA - hoursB || minutesA - minutesB;
 });
-
-console.log(timeArray);
 
 const addToTime = (currentTime) => {
     let totalMinuets =
@@ -145,4 +143,8 @@ clockCounter.forEach((clock) => {
     }
 });
 
-console.log(validClockCounter, clockData);
+console.log("Interviews per Month >>", monthArray, monthAmount);
+
+console.log("Interview Hours per Day >>", validClockCounter, clockData);
+
+console.log("Number of Interviews >>", timeArray.length);

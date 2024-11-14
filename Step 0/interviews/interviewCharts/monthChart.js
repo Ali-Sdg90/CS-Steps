@@ -1,7 +1,7 @@
 const dateChart = document.querySelector(".date-chart").getContext("2d");
 const timeChart = document.querySelector(".time-chart").getContext("2d");
 
-const sendOption = () => ({
+const sendOption = (isDate) => ({
     responsive: true,
     maintainAspectRatio: false,
     // devicePixelRatio: 2,
@@ -19,7 +19,7 @@ const sendOption = () => ({
             ticks: {
                 color: "#ccdce4",
                 font: {
-                    size: 14,
+                    size: isDate ? 10 : 16,
                 },
             },
         },
@@ -35,7 +35,7 @@ const sendOption = () => ({
             ticks: {
                 color: "#ccdce4",
                 font: {
-                    size: 14,
+                    size: isDate ? 14 : 24,
                 },
             },
         },
@@ -46,28 +46,30 @@ const sendOption = () => ({
                 enabled: true,
                 mode: "xy",
             },
-            zoom: {
-                enabled: true,
-                mode: "xy",
-                rangeMin: {
-                    x: 0,
-                },
-                rangeMax: {
-                    x: validClockCounter.length - 1,
-                },
-                rangeMin: {
-                    y: 0,
-                },
-                rangeMax: {
-                    y: Math.max(...clockData) + 2,
-                },
-            },
         },
         legend: {
             display: false,
         },
         tooltip: {
             enabled: true,
+            callbacks: {
+                label: function (context) {
+                    return "   " + context.raw;
+                },
+            },
+            titleFont: {
+                size: isDate ? 10 : 20,
+                weight: "bold",
+            },
+            bodyFont: {
+                size: isDate ? 10 : 18,
+            },
+            padding: {
+                top: isDate ? 8 : 10,
+                bottom: isDate ? 8 : 10,
+                left: isDate ? 8 : 15,
+                right: isDate ? 8 : 15,
+            },
         },
         datalabels: {
             color: "#00323F",
@@ -95,13 +97,12 @@ new Chart(dateChart, {
                 borderWidth: 3,
                 pointRadius: 5,
                 pointHoverRadius: 12,
-                // pointStyle: "cross",
                 tension: 0.3,
                 spanGaps: false,
             },
         ],
     },
-    options: sendOption(),
+    options: sendOption(true),
 });
 
 new Chart(timeChart, {
@@ -114,14 +115,13 @@ new Chart(timeChart, {
                 fill: false,
                 borderColor: "#00D68A",
                 backgroundColor: "#00D68A",
-                borderWidth: 3,
-                pointRadius: 5,
-                pointHoverRadius: 12,
-                // pointStyle: "cross",
+                borderWidth: 5,
+                pointRadius: 6,
+                pointHoverRadius: 14,
                 tension: 0.3,
                 spanGaps: false,
             },
         ],
     },
-    options: sendOption(),
+    options: sendOption(false),
 });

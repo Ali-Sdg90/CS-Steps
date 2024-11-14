@@ -9,8 +9,6 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
-
         <title>First Interviews</title>
     </head>
     <body>
@@ -33,14 +31,6 @@
         </span>
 
         <main>
-            <!-- <div class="header">Name</div>
-            <div class="header">Telegram ID</div>
-            <div class="header">State</div>
-            <div class="header">Date</div>
-            <div class="header">Twitter (<span class="thin-font">𝕏</span>)</div>
-            <div class="header">Telegram</div>
-            <div class="header">Local Note</div> -->
-
             <!-- <div>Ali Hesaraki</div>
             <div>@Ali_he96</div>
             <div>Done.</div>
@@ -62,13 +52,19 @@
 
         <section class="chart-section">
             <div class="date-chart-container">
-                <div class="chart-header-data">Interviews per Month</div>
+                <div class="chart-header-data">
+                    Interviews per Month (<span class="total-month-number"
+                        >10</span
+                    >Months)
+                </div>
                 <canvas class="date-chart"></canvas>
+                <div class="date-table"></div>
             </div>
 
             <div class="time-chart-container">
                 <div class="chart-header-time">Interview Hours per Day</div>
                 <canvas class="time-chart"></canvas>
+                <div class="time-table"></div>
             </div>
         </section>
 
@@ -77,6 +73,7 @@
         <script src="./script.js"></script>
 
         <script src="./interviewCharts/chartMaker.js"></script>
+        <script src="./interviewCharts/tableMaker.js"></script>
         <script src="./interviewCharts/monthChart.js"></script>
     </body>
 </html>
