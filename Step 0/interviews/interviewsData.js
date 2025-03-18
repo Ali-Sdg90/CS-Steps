@@ -584,7 +584,7 @@ const interviewsData = [
         username: "@Sourehshokri",
         date: "1403/12/12 17:00",
         twitterLink: "",
-        telegramLink: "",
+        telegramLink: "https://t.me/c/1770937044/3588",
     },
     {
         name: "Mohammad Amin Hajiloo",
@@ -598,6 +598,20 @@ const interviewsData = [
         username: "@Nimaj2002",
         date: "1403/12/13 18:00",
         twitterLink: "",
-        telegramLink: "",
+        telegramLink: "https://t.me/c/1770937044/3609",
+    },
+    {
+        name: "Mahdi Avaznia",
+        username: "@Met_iW",
+        date: "1403/12/19 21:00",
+        twitterLink: "",
+        telegramLink: "https://t.me/c/1326872711/12402",
+    },
+    {
+        name: "Eiya Hossaini",
+        username: "@EiaHosseini",
+        date: "1403/12/21 17:00",
+        twitterLink: "",
+        telegramLink: "https://t.me/c/1326872711/12416",
     },
 ];
