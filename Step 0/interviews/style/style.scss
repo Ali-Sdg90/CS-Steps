@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
     padding: 20px;
 
-    div {
+    .interview-table div {
         &:nth-child(14n-13),
         &:nth-child(14n-12),
         &:nth-child(14n-11),
@@ -43,10 +43,8 @@ h1 {
     text-shadow: 2px 0 rgba(0, 89, 255, 0.4), -2px 0 rgba(211, 0, 0, 0.4);
 }
 
-main {
+.interview-table {
     display: grid;
-    grid-template-rows: repeat(24, 1fr);
-    grid-template-columns: repeat(7, 1fr);
     border-radius: 3px;
     overflow: hidden;
     outline: 1px solid rgb(70, 70, 70);
@@ -65,6 +63,16 @@ main {
         transition: background 0.5s;
         text-align: center;
     }
+}
+
+.as-new-intern {
+    grid-template-columns: 50px repeat(7, 1fr);
+}
+.with-mentors {
+    grid-template-columns: 50px repeat(5, 1fr);
+}
+.with-new-interns {
+    grid-template-columns: 50px repeat(5, 1fr);
 }
 
 .header {
@@ -91,11 +99,8 @@ a {
 .separator {
     background: rgb(68, 68, 68) !important;
     font-size: 13px;
-
-    &__header {
-        font-weight: bold;
-        font-size: 18px;
-    }
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .tostify {
@@ -179,7 +184,6 @@ a {
 
     .chart-header-data,
     .chart-header-time {
-        border: 1px solid rgb(81, 81, 81);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -204,6 +208,7 @@ a {
         padding: 20px 20px 80px;
         border-radius: 20px;
         overflow: hidden;
+        background-color: rgb(81, 81, 81);;
     }
 
     .time-chart-container {

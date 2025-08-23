@@ -39,10 +39,10 @@ body {
   font-family: sans-serif;
   padding: 20px;
 }
-body div:nth-child(14n-13), body div:nth-child(14n-12), body div:nth-child(14n-11), body div:nth-child(14n-10), body div:nth-child(14n-9), body div:nth-child(14n-8), body div:nth-child(14n-7) {
+body .interview-table div:nth-child(14n-13), body .interview-table div:nth-child(14n-12), body .interview-table div:nth-child(14n-11), body .interview-table div:nth-child(14n-10), body .interview-table div:nth-child(14n-9), body .interview-table div:nth-child(14n-8), body .interview-table div:nth-child(14n-7) {
   background: rgb(81, 81, 81);
 }
-body div:nth-child(14n-6), body div:nth-child(14n-5), body div:nth-child(14n-4), body div:nth-child(14n-3), body div:nth-child(14n-2), body div:nth-child(14n-1), body div:nth-child(14n) {
+body .interview-table div:nth-child(14n-6), body .interview-table div:nth-child(14n-5), body .interview-table div:nth-child(14n-4), body .interview-table div:nth-child(14n-3), body .interview-table div:nth-child(14n-2), body .interview-table div:nth-child(14n-1), body .interview-table div:nth-child(14n) {
   background: rgb(86, 86, 86);
 }
 
@@ -54,16 +54,14 @@ h1 {
   text-shadow: 2px 0 rgba(0, 89, 255, 0.4), -2px 0 rgba(211, 0, 0, 0.4);
 }
 
-main {
+.interview-table {
   display: grid;
-  grid-template-rows: repeat(24, 1fr);
-  grid-template-columns: repeat(7, 1fr);
   border-radius: 3px;
   overflow: hidden;
   outline: 1px solid rgb(70, 70, 70);
   outline-offset: -1px;
 }
-main div {
+.interview-table div {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
@@ -75,6 +73,18 @@ main div {
   overflow: hidden;
   transition: background 0.5s;
   text-align: center;
+}
+
+.as-new-intern {
+  grid-template-columns: 50px repeat(7, 1fr);
+}
+
+.with-mentors {
+  grid-template-columns: 50px repeat(5, 1fr);
+}
+
+.with-new-interns {
+  grid-template-columns: 50px repeat(5, 1fr);
 }
 
 .header {
@@ -101,8 +111,6 @@ a {
 .separator {
   background: rgb(68, 68, 68) !important;
   font-size: 13px;
-}
-.separator__header {
   font-weight: bold;
   font-size: 18px;
 }
@@ -183,7 +191,6 @@ a {
 }
 .chart-section .chart-header-data,
 .chart-section .chart-header-time {
-  border: 1px solid rgb(81, 81, 81);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +212,7 @@ a {
   padding: 20px 20px 80px;
   border-radius: 20px;
   overflow: hidden;
+  background-color: rgb(81, 81, 81);
 }
 .chart-section .time-chart-container {
   width: 180vw;

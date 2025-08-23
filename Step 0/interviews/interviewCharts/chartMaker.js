@@ -13,15 +13,23 @@ const persianMonth = [
     "اسفند",
 ];
 
-let mentorsInterviews = interviewsData.slice(29, 34);
+const mergedInterviews = [
+    ...new Set([
+        ...interviewsData.asNewIntern,
+        ...interviewsData.withMentors,
+        ...interviewsData.withNewInterns,
+    ]),
+];
 
-interviewsData.splice(29, 5);
+let mentorsInterviews = mergedInterviews.slice(29, 34);
 
-interviewsData.splice(41, 0, ...mentorsInterviews); // Add Mentors Interviews
+mergedInterviews.splice(29, 5);
+
+mergedInterviews.splice(41, 0, ...mentorsInterviews); // Add Mentors Interviews
 
 const persianYear = [];
 
-interviewsData.forEach((interview) => {
+mergedInterviews.forEach((interview) => {
     const interviewYear = interview.date.split("/")[0];
 
     if (persianYear.indexOf(interviewYear) === -1) {
@@ -31,7 +39,7 @@ interviewsData.forEach((interview) => {
 
 // console.log("persianYear >>", persianYear);
 
-const tableData = interviewsData.map((interview) => ({
+const tableData = mergedInterviews.map((interview) => ({
     fullName: interview.name,
 
     monthYear: `${interview.date.split("/")[0]} ${
