@@ -8,7 +8,7 @@ document.querySelectorAll("div").forEach((div) => {
             let textToCopy = divContent;
 
             if (div.getAttribute("link")) {
-                textToCopy = `file:///D:/Desktop/CS-Internship/Interviews/${div
+                textToCopy = `file:///C:/Users/alisd/OneDrive/Desktop/CS-Internship/Interviews/${div
                     .getAttribute("link")
                     .replace(/ /g, "%20")}.txt`;
             }
