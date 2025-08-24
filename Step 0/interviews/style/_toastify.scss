@@ -1,0 +1,49 @@
+.toastify {
+    width: 250px;
+    height: 80px;
+    color: white;
+    background: rgb(91, 91, 91);
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    box-shadow: 0 5px 10px rgba(30, 30, 30, 0.541);
+    overflow: hidden;
+    transition: background-color 0.15s;
+    cursor: default;
+    animation: toastify__animation 3.45s ease-in-out forwards;
+    z-index: 10000;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        letter-spacing: 1.5px;
+        gap: 3px;
+
+        &__text {
+            background: rgb(71, 71, 71);
+            padding: 5px;
+            border-radius: 5px;
+            letter-spacing: 0px;
+            white-space: nowrap;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__timer {
+        width: 100%;
+        border-left: 250px solid rgb(168, 168, 0);
+        animation: toastify__timer__animation 2.8s ease-in-out 0.3s forwards;
+    }
+
+    &:hover {
+        background-color: rgb(88, 88, 88);
+    }
+}

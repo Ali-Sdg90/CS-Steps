@@ -96,12 +96,8 @@ const createHtmlTable = (tableIndex) => {
 
     htmlList += createHeader(modesKeys[tableIndex]);
 
-    // console.log("modesKeys[tableIndex] >>", Object.keys(headersConfig)[tableIndex]);
-
     interviewsData[modesKeys[tableIndex]].forEach((memberInfo, index) => {
         console.log(memberInfo, index, modesKeys[tableIndex]);
-
-        // debugger;
 
         htmlList += createRow(memberInfo, index, modesKeys[tableIndex]);
     });
@@ -113,4 +109,18 @@ document.querySelectorAll(".interview-table").forEach((tableElement, index) => {
     tableElement.innerHTML = createHtmlTable(index);
 });
 
-// console.log(Object.entries(headersConfig)[1][1].length);
+const tableColors = ["rgb(81,81,81)", "rgb(86,86,86)"];
+
+const colorizeTable = (selector, groupSize) => {
+    let items = Array.from(document.querySelectorAll(selector));
+    items.shift();
+
+    items.forEach((item, index) => {
+        const groupIndex = Math.floor(index / groupSize) % tableColors.length;
+        item.style.backgroundColor = tableColors[groupIndex];
+    });
+};
+
+colorizeTable(".as-new-intern div", 8);
+colorizeTable(".with-mentors div", 6);
+colorizeTable(".with-new-interns div", 6);

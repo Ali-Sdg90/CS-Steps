@@ -1,0 +1,44 @@
+@media (max-width: 1500px) {
+    main {
+        font-size: 12px !important;
+
+        .interview-table div {
+            min-height: 30px !important;
+        }
+    }
+
+    .separator {
+        font-size: 16px !important;
+    }
+
+    .header {
+        margin-top: 30px !important;
+    }
+
+    .chart-header-data {
+        font-size: 18px !important;
+    }
+
+    .chart-header-time {
+        font-size: 36px !important;
+    }
+
+    h1 {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .date-table,
+    .time-table {
+        display: none !important;
+    }
+
+    .date-chart-container {
+        padding: 20px 20px 40px !important;
+    }
+
+    .time-chart-container {
+        padding: 34px 40px 95px !important;
+    }
+}

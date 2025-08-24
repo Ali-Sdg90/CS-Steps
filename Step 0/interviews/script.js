@@ -58,14 +58,14 @@ document.querySelectorAll("a").forEach((a) => {
 
 const toastifyCopy = (textToCopy) => {
     document.getElementById("toastify__Queue").innerHTML = `
-        <span class="tostify">
-            <span class="tostify__content">
+        <span class="toastify">
+            <span class="toastify__content">
                 <span>Text copied</span>
-                <span class="tostify__content__text" title="${textToCopy}">
+                <span class="toastify__content__text" title="${textToCopy}">
                     ${textToCopy}
                 </span>
             </span>
-            <span class="tostify__timer"></span>
+            <span class="toastify__timer"></span>
         </span>
     `;
 };
