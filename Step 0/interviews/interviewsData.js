@@ -609,7 +609,13 @@ const interviewsData = {
             name: "Zahra Zokaei",
             username: "@zahra_zokaei",
             date: "1404/05/29 13:00",
-            telegramLink: "",
+            telegramLink: "https://t.me/c/1770937044/4120",
+        },
+        {
+            name: "Farshid Tabashir",
+            username: "@No0nen0oN",
+            date: "1404/06/17 20:15",
+            telegramLink: "https://t.me/c/1770937044/4148",
         },
     ],
 };
