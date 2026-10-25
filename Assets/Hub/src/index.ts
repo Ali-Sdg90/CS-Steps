@@ -33,7 +33,7 @@ const steps: StepData[] = [
     {
         number: 0,
         period: "1402/01/07 → 1402/01/26",
-        durationDays: 19,
+        durationDays: 20,
         courseLink: `${COURSE_REPOSITORY}/Step%200.md`,
         summaryPath: "./Step%200/Step%20sum/Step%200%20sum.pdf",
         exercises: [],
@@ -47,7 +47,7 @@ const steps: StepData[] = [
     {
         number: 1,
         period: "1402/01/30 → 1402/02/05",
-        durationDays: 6,
+        durationDays: 7,
         courseLink: `${COURSE_REPOSITORY}/web/01-BasicLayout-IntroJS.md`,
         summaryPath: "./Step%201/Step%20sum/Step%201%20Sum.pdf",
         exercises: [],
@@ -64,11 +64,11 @@ const steps: StepData[] = [
     {
         number: 2,
         period: "1402/02/15 → 1402/02/30",
-        durationDays: 15,
+        durationDays: 16,
         courseLink: `${COURSE_REPOSITORY}/web/02-AdvancedLayout-BasicJS.md`,
         summaryPath: "./Step%202/Step%20sum/Step%202%20Sum.pdf",
         exercises: [
-            playground("Hello World", "Hello%20World"),
+            // playground("Hello World", "Hello%20World"),
             playground("Two Fer", "Two%20Fer"),
         ],
         projects: [project("Calculator", "Calculator")],
@@ -84,16 +84,14 @@ const steps: StepData[] = [
     {
         number: 3,
         period: "1402/03/03 → 1402/03/18",
-        durationDays: 15,
+        durationDays: 16,
         courseLink: `${COURSE_REPOSITORY}/web/03-intermediateJS(I).md`,
         summaryPath: "./Step%203/Step%20sum/Step%203%20Sum.pdf",
         exercises: [
-            playground("Leap", "Leap"),
+            // playground("Leap", "Leap"),
             playground("Pangram", "Pangram"),
         ],
-        projects: [
-            project("Calculator", "Calculator"),
-        ],
+        projects: [project("Calculator", "Calculator")],
         presentation: {
             label: "Project Preview",
             href: "./Step%203/Twitch/Presentation/Project/",
@@ -106,13 +104,11 @@ const steps: StepData[] = [
     {
         number: 4,
         period: "1402/04/01 → 1402/04/21",
-        durationDays: 20,
+        durationDays: 21,
         courseLink: `${COURSE_REPOSITORY}/web/04-intermediateJS(II).md`,
         summaryPath: "./Step%204/Step%20sum/Step%204%20Sum.pdf",
         exercises: [playground("Pascal's Triangle", "Pascal%27s%20Triangle")],
-        projects: [
-            project("Todo App", "Todo-App"),
-        ],
+        projects: [project("Todo App", "Todo-App")],
         presentation: {
             label: "Project Preview",
             href: "./Step%204/Twitch/Presentation/",
@@ -125,18 +121,16 @@ const steps: StepData[] = [
     {
         number: 5,
         period: "1402/04/31 → 1402/05/17",
-        durationDays: 17,
+        durationDays: 18,
         courseLink: `${COURSE_REPOSITORY}/web/05-DesignPattern.md`,
         summaryPath: "./Step%205/Step%20sum/Step%205%20Sum.pdf",
         exercises: [
             playground(
                 "Resistor Color Duo",
-                "Resistor%20Color%20Duo/Attempt%202"
+                "Resistor%20Color%20Duo/Attempt%202",
             ),
         ],
-        projects: [
-            project("Todo App: KnockoutJS", "Todo-App-KnockoutJS"),
-        ],
+        projects: [project("Todo App: KnockoutJS", "Todo-App-KnockoutJS")],
         presentation: {
             label: "Project Preview",
             href: "./Step%205/Twitch/Presentation/",
@@ -149,7 +143,7 @@ const steps: StepData[] = [
     {
         number: 6,
         period: "1402/05/26 → 1402/07/04",
-        durationDays: 40,
+        durationDays: 41,
         courseLink: `${COURSE_REPOSITORY}/web/06-http-storage.md`,
         summaryPath: "./Step%206/Step%20sum/Step%206%20Sum.pdf",
         exercises: [playground("Sum of Multiples", "Sum%20of%20Multiples")],
@@ -166,11 +160,11 @@ const steps: StepData[] = [
     {
         number: 7,
         period: "1402/07/14 → 1402/08/17",
-        durationDays: 33,
+        durationDays: 34,
         courseLink: `${COURSE_REPOSITORY}/web/07-Security.md`,
         summaryPath: "./Step%207/Step%20sum/Step%207%20Sum.pdf",
         exercises: [
-            playground("ETL · JavaScript", "ETL-JS"),
+            // playground("ETL · JavaScript", "ETL-JS"),
             playground("Grade School · JavaScript", "Grade%20School-JS"),
         ],
         projects: [project("Todo Login Page", "Todo-Login-Page")],
@@ -186,15 +180,14 @@ const steps: StepData[] = [
     {
         number: 8,
         period: "1402/08/25 → 1402/09/08",
-        durationDays: 13,
+        durationDays: 14,
         courseLink: `${COURSE_REPOSITORY}/web/08-BasicTS.md`,
         summaryPath: "./Step%208/Step%20sum/Step%208%20Sum.pdf",
-        exercises: [playground("Simple Cipher · JavaScript", "Simple%20Cipher-JS")],
+        exercises: [
+            playground("Simple Cipher · JavaScript", "Simple%20Cipher-JS"),
+        ],
         projects: [
-            project(
-                "Simple Shopping Site",
-                "CS-Concept-TypeScript-Project"
-            ),
+            project("Simple Shopping Site", "CS-Concept-TypeScript-Project"),
         ],
         presentation: {
             label: "Project Preview",
@@ -208,18 +201,15 @@ const steps: StepData[] = [
     {
         number: 9,
         period: "1402/09/17 → 1402/10/20",
-        durationDays: 33,
+        durationDays: 34,
         courseLink: `${COURSE_REPOSITORY}/web/09-IntermediateTS(I).md`,
         summaryPath: "./Step%209/Step%20sum/Step%209%20Sum.pdf",
         exercises: [
-            playground("ETL · TypeScript", "ETL-TS"),
+            // playground("ETL · TypeScript", "ETL-TS"),
             playground("Grade School · TypeScript", "Grade%20School-TS"),
         ],
         projects: [
-            project(
-                "Simple Shopping Site",
-                "CS-Concept-TypeScript-Project"
-            ),
+            project("Simple Shopping Site", "CS-Concept-TypeScript-Project"),
         ],
         presentation: {
             label: "Project Preview",
@@ -233,15 +223,14 @@ const steps: StepData[] = [
     {
         number: 10,
         period: "1402/10/24 → 1402/11/10",
-        durationDays: 16,
+        durationDays: 17,
         courseLink: `${COURSE_REPOSITORY}/web/10-IntermediateTS(II).md`,
         summaryPath: "./Step%2010/Step%20sum/Step%2010%20Sum.pdf",
-        exercises: [playground("Simple Cipher · TypeScript", "Simple%20Cipher-TS")],
+        exercises: [
+            playground("Simple Cipher · TypeScript", "Simple%20Cipher-TS"),
+        ],
         projects: [
-            project(
-                "Simple Shopping Site",
-                "CS-Concept-TypeScript-Project"
-            ),
+            project("Simple Shopping Site", "CS-Concept-TypeScript-Project"),
         ],
         presentation: {
             label: "Project Preview",
@@ -262,7 +251,7 @@ const LINK_ICON = `
 
 const externalLink = (
     resource: ResourceLink,
-    className = "resource-link"
+    className = "resource-link",
 ): string => `
     <a class="${className}" href="${resource.href}" target="_blank" rel="noreferrer">
         <span>${resource.label}</span>
@@ -272,7 +261,7 @@ const externalLink = (
 
 const renderResourceList = (
     resources: ResourceLink[],
-    emptyMessage: string
+    emptyMessage: string,
 ): string => {
     if (resources.length === 0) {
         return `<span class="empty-state">${emptyMessage}</span>`;
@@ -286,7 +275,8 @@ const renderResourceList = (
 const formatStepNumber = (stepNumber: number): string =>
     stepNumber < 10 ? `0${stepNumber}` : stepNumber.toString();
 
-const stepsBody = document.querySelector<HTMLTableSectionElement>("#steps-body");
+const stepsBody =
+    document.querySelector<HTMLTableSectionElement>("#steps-body");
 
 if (stepsBody) {
     stepsBody.innerHTML = steps
@@ -327,12 +317,12 @@ if (stepsBody) {
                         step.youtube
                             ? externalLink(
                                   step.youtube,
-                                  "resource-link youtube-link"
+                                  "resource-link youtube-link",
                               )
                             : '<span class="empty-state">No recording</span>'
                     }</td>
                 </tr>
-            `
+            `,
         )
         .join("");
 }
@@ -366,7 +356,7 @@ if (stepsTable && window.matchMedia("(hover: hover)").matches) {
         stepsTable
             .querySelectorAll(`tr > :nth-child(${highlightedColumn + 1})`)
             .forEach((columnCell) =>
-                columnCell.classList.add("is-column-hovered")
+                columnCell.classList.add("is-column-hovered"),
             );
     });
 
@@ -396,10 +386,10 @@ stepsTable?.addEventListener("click", (event) => {
         const closestBox = closest.getBoundingClientRect();
         const linkBox = link.getBoundingClientRect();
         const closestDistance = Math.abs(
-            event.clientY - (closestBox.top + closestBox.height / 2)
+            event.clientY - (closestBox.top + closestBox.height / 2),
         );
         const linkDistance = Math.abs(
-            event.clientY - (linkBox.top + linkBox.height / 2)
+            event.clientY - (linkBox.top + linkBox.height / 2),
         );
 
         return linkDistance < closestDistance ? link : closest;
@@ -443,19 +433,19 @@ const updateColors = (): void => {
 
     root.style.setProperty(
         "--random-color-1",
-        `rgb(${channel(red[0], 1)}, ${channel(green[0], 1)}, ${channel(blue[0], 1)})`
+        `rgb(${channel(red[0], 1)}, ${channel(green[0], 1)}, ${channel(blue[0], 1)})`,
     );
     root.style.setProperty(
         "--random-color-2",
-        `rgb(${channel(red[0], 2.25)}, ${channel(green[0], 2.25)}, ${channel(blue[0], 2.25)})`
+        `rgb(${channel(red[0], 2.25)}, ${channel(green[0], 2.25)}, ${channel(blue[0], 2.25)})`,
     );
     root.style.setProperty(
         "--random-color-3",
-        `rgb(${channel(red[0], 3.25)}, ${channel(green[0], 3.25)}, ${channel(blue[0], 3.25)})`
+        `rgb(${channel(red[0], 3.25)}, ${channel(green[0], 3.25)}, ${channel(blue[0], 3.25)})`,
     );
     root.style.setProperty(
         "--random-color-4",
-        `rgb(${channel(red[0], 4.5)}, ${channel(green[0], 4.5)}, ${channel(blue[0], 4.5)})`
+        `rgb(${channel(red[0], 4.5)}, ${channel(green[0], 4.5)}, ${channel(blue[0], 4.5)})`,
     );
 };
 

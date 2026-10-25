@@ -48,7 +48,6 @@ const steps = [
         courseLink: `${COURSE_REPOSITORY}/web/02-AdvancedLayout-BasicJS.md`,
         summaryPath: "./Step%202/Step%20sum/Step%202%20Sum.pdf",
         exercises: [
-            playground("Hello World", "Hello%20World"),
             playground("Two Fer", "Two%20Fer"),
         ],
         projects: [project("Calculator", "Calculator")],
@@ -68,12 +67,9 @@ const steps = [
         courseLink: `${COURSE_REPOSITORY}/web/03-intermediateJS(I).md`,
         summaryPath: "./Step%203/Step%20sum/Step%203%20Sum.pdf",
         exercises: [
-            playground("Leap", "Leap"),
             playground("Pangram", "Pangram"),
         ],
-        projects: [
-            project("Calculator", "Calculator"),
-        ],
+        projects: [project("Calculator", "Calculator")],
         presentation: {
             label: "Project Preview",
             href: "./Step%203/Twitch/Presentation/Project/",
@@ -90,9 +86,7 @@ const steps = [
         courseLink: `${COURSE_REPOSITORY}/web/04-intermediateJS(II).md`,
         summaryPath: "./Step%204/Step%20sum/Step%204%20Sum.pdf",
         exercises: [playground("Pascal's Triangle", "Pascal%27s%20Triangle")],
-        projects: [
-            project("Todo App", "Todo-App"),
-        ],
+        projects: [project("Todo App", "Todo-App")],
         presentation: {
             label: "Project Preview",
             href: "./Step%204/Twitch/Presentation/",
@@ -111,9 +105,7 @@ const steps = [
         exercises: [
             playground("Resistor Color Duo", "Resistor%20Color%20Duo/Attempt%202"),
         ],
-        projects: [
-            project("Todo App: KnockoutJS", "Todo-App-KnockoutJS"),
-        ],
+        projects: [project("Todo App: KnockoutJS", "Todo-App-KnockoutJS")],
         presentation: {
             label: "Project Preview",
             href: "./Step%205/Twitch/Presentation/",
@@ -147,7 +139,6 @@ const steps = [
         courseLink: `${COURSE_REPOSITORY}/web/07-Security.md`,
         summaryPath: "./Step%207/Step%20sum/Step%207%20Sum.pdf",
         exercises: [
-            playground("ETL · JavaScript", "ETL-JS"),
             playground("Grade School · JavaScript", "Grade%20School-JS"),
         ],
         projects: [project("Todo Login Page", "Todo-Login-Page")],
@@ -166,7 +157,9 @@ const steps = [
         durationDays: 14,
         courseLink: `${COURSE_REPOSITORY}/web/08-BasicTS.md`,
         summaryPath: "./Step%208/Step%20sum/Step%208%20Sum.pdf",
-        exercises: [playground("Simple Cipher · JavaScript", "Simple%20Cipher-JS")],
+        exercises: [
+            playground("Simple Cipher · JavaScript", "Simple%20Cipher-JS"),
+        ],
         projects: [
             project("Simple Shopping Site", "CS-Concept-TypeScript-Project"),
         ],
@@ -186,7 +179,6 @@ const steps = [
         courseLink: `${COURSE_REPOSITORY}/web/09-IntermediateTS(I).md`,
         summaryPath: "./Step%209/Step%20sum/Step%209%20Sum.pdf",
         exercises: [
-            playground("ETL · TypeScript", "ETL-TS"),
             playground("Grade School · TypeScript", "Grade%20School-TS"),
         ],
         projects: [
@@ -207,7 +199,9 @@ const steps = [
         durationDays: 17,
         courseLink: `${COURSE_REPOSITORY}/web/10-IntermediateTS(II).md`,
         summaryPath: "./Step%2010/Step%20sum/Step%2010%20Sum.pdf",
-        exercises: [playground("Simple Cipher · TypeScript", "Simple%20Cipher-TS")],
+        exercises: [
+            playground("Simple Cipher · TypeScript", "Simple%20Cipher-TS"),
+        ],
         projects: [
             project("Simple Shopping Site", "CS-Concept-TypeScript-Project"),
         ],
