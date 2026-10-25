@@ -1,43 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            id="css-file"
-            href="Assets/Hub/styles/style.css"
+        <meta
+            name="description"
+            content="Explore all 11 stages of Ali Sadeghi's CS Internship web development journey, from Step 0 through Step 10."
         />
-        <title>CS-Steps-Hub</title>
+        <meta name="theme-color" content="#171126" />
+        <link rel="stylesheet" href="Assets/Hub/styles/style.css" />
+        <title>CS Steps Hub | Ali Sadeghi</title>
     </head>
     <body>
-        <h1 class="page-title">- CS Steps Hub -</h1>
-        <div class="steps-table">
-            <!-- <div class="table-headers">
-                <div class="table-header">Step Number</div>
-                <div class="table-header">Step Summery</div>
-                <div class="table-header">Twitch Project</div>
-                <div class="table-header">Twitch Link</div>
-            </div> -->
+        <main class="page-shell">
+            <header class="page-header">
+                <h1>CS Steps Hub</h1>
+                <p>
+                    A collection of projects, exercises, summaries, and
+                    presentations from my CS Internship web development journey.
+                </p>
+            </header>
 
-            <div class="table-headers">
-                <div class="table-header">Step Number</div>
-                <div class="table-header">Step Summery</div>
-                <div class="table-header">Live Presentation Project</div>
-                <div class="table-header">Live Presentation Link</div>
-            </div>
+            <section class="table-panel" aria-label="CS Steps journey">
+                <div
+                    class="table-scroll"
+                    tabindex="0"
+                    role="region"
+                    aria-label="CS Steps resources table"
+                >
+                    <table class="steps-table">
+                        <colgroup>
+                            <col class="column-step" />
+                            <col class="column-github" />
+                            <col class="column-summary" />
+                            <col class="column-exercism" />
+                            <col class="column-projects" />
+                            <col class="column-presentation" />
+                            <col class="column-youtube" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Step Number</th>
+                                <th scope="col">
+                                    <span class="period-heading">
+                                        <span>Step Period</span>
+                                        <span class="period-heading-meta"
+                                            >~ 10 months total</span
+                                        >
+                                    </span>
+                                </th>
+                                <th scope="col">Step Summary</th>
+                                <th scope="col">Exercism Step</th>
+                                <th scope="col">Step Projects</th>
+                                <th scope="col">Presentation Project</th>
+                                <th scope="col">YouTube Presentation</th>
+                            </tr>
+                        </thead>
+                        <tbody id="steps-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
 
-            <!-- <div class="step-contents">
-                <a href="" class="step-number step-content">Step 1</a>
-
-                <a href="" class="step-sum step-content">Download</a>
-
-                <a href="" class="twitch-files step-content">Twitch Project</a>
-
-                <a onc href="" class="twitch-link step-content">Link</a>
-            </div> -->
-        </div>
-
-        <script src="Assets/Hub/dist/index.js"></script>
+        <noscript>
+            <p class="noscript-message">
+                JavaScript is required to display the CS Steps resource table.
+            </p>
+        </noscript>
+        <script src="Assets/Hub/dist/index.js" defer></script>
     </body>
 </html>
